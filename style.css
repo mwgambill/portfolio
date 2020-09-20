@@ -1,0 +1,32 @@
+.text-centered {
+  text-align: center;
+}
+
+.wrapper {
+  width: 400px;
+  margin: auto;
+  padding: 0;
+}
+
+.dark {
+  background-color:black;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  font-family:Nirmala UI;
+  background-image:url(images/greypoly.jpg);
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+a:link    { color: blue;  }
+a:visited { color: rgb(0, 255, 21);   }
+a:hover   { color: green; }
+a:active  { color: rgb(247, 15, 53); } 
