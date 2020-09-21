@@ -1,32 +1,50 @@
+/* create classes that can apply to html code
+fist aligns text in the center of the element its applied to */
 .text-centered {
   text-align: center;
 }
 
+/* create a wrapper class for the main content of page */
 .wrapper {
   width: 400px;
   margin: auto;
   padding: 0;
 }
 
+/* class for the bg of header and footer */
 .dark {
   background-color:black;
   color: white;
 }
 
+/* center all h2 header texts on page */
 h2 {
   text-align: center;
 }
 
+/* set background of page and font to be used */
 body {
   font-family:Nirmala UI;
   background-image:url(images/greypoly.jpg);
 }
 
+/* ensure that my header has no blank space above it */
 h1 {
   margin-top: 0px;
 }
 
+/* custom css style for hyperlinks */
 a:link    { color: blue;  }
 a:visited { color: rgb(0, 255, 21);   }
 a:hover   { color: green; }
 a:active  { color: rgb(247, 15, 53); } 
+
+/* use the 'height' property, also, this fixes the issue I had with the blank space under my footer! :) */
+footer {
+  height: 25px;
+}
+
+/* use the 'font-size' property, making the sub-text in my header looks more pleasing */
+h3 {
+  font-size: 90%;
+}
