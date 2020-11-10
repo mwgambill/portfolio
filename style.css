@@ -1,50 +1,105 @@
-/* create classes that can apply to html code
-fist aligns text in the center of the element its applied to */
-.text-centered {
-  text-align: center;
-}
+/* General Styles */
 
-/* create a wrapper class for the main content of page */
+main {
+    margin-top: 60px;
+  }
+  
+  main h1 {
+    margin: 0 10px;
+    text-align: center;
+    font-family: Arial Narrow Bold, sans-serif;
+    font-size: 50px;
+  }
+  
+  main h2 {
+    margin: 18px 0 12px 0;
+    border-bottom: 1px solid #0b0eda;
+    font-family: Arial Narrow Bold, sans-serif;
+    font-size: 24px;
+  }
+  
+  main h3 {
+    margin: 18px 0 12px 0;
+    border-bottom: 1px solid #0b0eda;
+    font-family: Arial Narrow Bold, sans-serif;
+    font-size: 18px;
+  }
+  
+  main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+  }
+  
+  .bg-primary {
+    background-color: #0b0eda;
+  }
+  
+  .group img {
+    width: 100%;
+  }
+
+  .text-centered {
+    text-align: center;
+  }
+
+  /* create a wrapper class for the main content of page */
 .wrapper {
-  width: 400px;
-  margin: auto;
-  padding: 0;
-}
+    width: 400px;
+    margin: auto;
+    padding: 0;
+  }
+  
+  /* Groups & Items  (Mobile First) */
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
 
-/* class for the bg of header and footer */
+  /* class for the bg of header and footer */
 .dark {
-  background-color:black;
-  color: white;
-}
+    background-color:black;
+    color: white;
+  }
 
-/* center all h2 header texts on page */
-h2 {
-  text-align: center;
-}
-
-/* set background of page and font to be used */
+  /* set background of page and font to be used */
 body {
-  font-family:Nirmala UI;
-  background-image:url(images/greypoly.jpg);
-}
+    font-family:Nirmala UI;
+    background-image:url(images/greypoly.jpg);
+  }
+  
+  /* ensure that my header has no blank space above it */
+  h1 {
+    margin-top: 0px;
+  }
 
-/* ensure that my header has no blank space above it */
-h1 {
-  margin-top: 0px;
-}
-
-/* custom css style for hyperlinks */
+  /* custom css style for hyperlinks */
 a:link    { color: blue;  }
 a:visited { color: rgb(0, 255, 21);   }
 a:hover   { color: green; }
 a:active  { color: rgb(247, 15, 53); } 
 
-/* use the 'height' property, also, this fixes the issue I had with the blank space under my footer! :) */
-footer {
-  height: 25px;
-}
 
-/* use the 'font-size' property, making the sub-text in my header looks more pleasing */
-h3 {
-  font-size: 90%;
-}
+  
+  /* Groups & Items  (Desktop) */
+  
+  @media all and (min-width: 800px) {
+    section {
+      padding: 0 10%;
+    }
+  
+    .group {
+      flex-direction: row;
+    }
+  }
