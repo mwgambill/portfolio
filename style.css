@@ -1,6 +1,7 @@
 header {
   background-color: #000;
   margin-bottom: 40px;
+ 
 }
  
 header h1 {
@@ -41,6 +42,7 @@ header nav ul li:last-child a {
   margin-right: 0;
 }
 
+
 footer {
   display: flex;
   text-align: center;
@@ -52,10 +54,7 @@ footer p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.wrapper {
-	width: 580px;
-	margin: auto;	
-}
+
 
 .bookshelf{
   display: flex;
