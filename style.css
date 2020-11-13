@@ -85,7 +85,7 @@ footer p {
 }
 
 body {
-	background-color: darkcyan;
+	background-color: rgba(152, 201, 201, 0.884);
 }
 
 h1{
@@ -175,4 +175,29 @@ p, li {
     padding-right: 200px;
   }
 
+}
+
+
+a:link
+{ 
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+a:visited
+{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+a:hover
+{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+a:active
+{
+    font-weight: bolder;
+    font-size: 18px;
 }
